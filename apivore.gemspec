@@ -13,19 +13,18 @@ Gem::Specification.new do |s|
   s.files      += Dir['data/custom_schemata/*.json']
   s.homepage    = 'http://github.com/westfieldlabs/apivore'
   s.licenses    = ['Apache 2.0']
-  s.required_ruby_version = ">= 2.5.0"
+  s.required_ruby_version = ">= 2.6.0"
 
   s.add_runtime_dependency 'json-schema', '~> 2.5'
   s.add_runtime_dependency 'rspec', '~> 3'
   s.add_runtime_dependency 'rspec-expectations', '~> 3.1'
   s.add_runtime_dependency 'rspec-mocks', '~> 3.10'
-  s.add_runtime_dependency 'hashie', '~> 4.0'
+  s.add_runtime_dependency 'hashie', '~> 4.1'
   s.add_development_dependency 'pry', '~> 0'
   s.add_development_dependency 'rake', '~> 10.3'
   s.add_development_dependency 'rspec-rails', '~> 4'
 
-  s.add_runtime_dependency 'actionpack', '>= 4', '< 7'
-  s.add_development_dependency 'activesupport', '>= 4', '< 7'
-
+  s.add_runtime_dependency 'actionpack', '>= 4', '< 8'
+  s.add_development_dependency 'activesupport', '>= 4', '< 8'
   s.add_development_dependency 'test-unit', '~> 3'
 end
